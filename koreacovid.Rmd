@@ -55,12 +55,15 @@ basicCC + geom_bar(stat="identity", position = "dodge")
 The plot barplot chart show their more male of 70% dead than female is 50%. Their are 55% of female alive and 45% male. The reveal that men have an higher rate in dying than women.  
   
 
-
-
-
-
-  
 ## Numerical results
+
+
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+The table reveal that female have higher percentage in being alive than dead whareas the men higher percentage in dead than alive. The result for female alive is 98.7% and for male is 97%. The dead percentage for female is 1.4 % and male is 3%.
 
 
 ## Inferential results 

@@ -34,14 +34,25 @@ state of a patient must be died or alive - we adjust that as well
 We will examined the sex of the individual and verify the status if they are alive or dead. Also, we will used the helper file cat~cat to answers questions in this WUP_07 (title: "Initial Korean covid 19". 
 
 
-
-
-
-
 ## Graphical results - use ggplot commands to do this  
 
+#### Plot barplots ggplot way
+
+```{r}
+dd2 <- kRdata %>% group_by(result,Sex) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
 
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(dd2,aes(x=result,y=count,fill=Sex))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=Sex)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
+The plot barplot chart show their more male of 70% dead than female is 50%. Their are 55% of female alive and 45% male. The reveal that men have an higher rate in dying than women.  
   
 
 

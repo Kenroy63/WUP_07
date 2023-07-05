@@ -69,6 +69,13 @@ The table reveal that female have higher percentage in being alive than dead wha
 ## Inferential results 
 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The observed counts show 1831 female and 1411 male. The p-value = 1 out of a 1000, so their a little chance of getting female and male dying. 
 
 
 ## Conclusions

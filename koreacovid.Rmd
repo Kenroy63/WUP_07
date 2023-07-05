@@ -25,7 +25,13 @@ Some of the data was uncoded for sex - sex must be just male or female
 77 of the data entries were coded sex  as blank, so we omit these.
 state of a patient must be died or alive - we adjust that as well   
   
+  
+  
 # Your Question - Is dying independent of sex?
+
+
+## METHODS
+We will examined the sex of the individual and verify the status if they are alive or dead. Also, we will used the helper file cat~cat to answers questions in this WUP_07 (title: "Initial Korean covid 19". 
 
 
 

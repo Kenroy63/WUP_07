@@ -80,3 +80,6 @@ The observed counts show 1831 female and 1411 male. The p-value = 1 out of a 100
 
 ## Conclusions
 
+After review the view, I have more knowledge of ggplot and helper file. I am improving my skills in using Github and Rstudio. I need more practice with writing my paragraph for each section of my WUPs.
+
+
